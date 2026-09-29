@@ -1,5 +1,11 @@
 # Análisis de datos, evento 2 (2026-2)
 
+## INTEGRANTES
+- HAROL STIVEN RESTREPO RESTREPO
+- JALVI HUMBERTO VILLEGAS TABORDA
+- LEONEL ANTONIO MARTINEZ SILGADO
+- YULIETH MARCELA URREGO RESTREPO
+
 Exploración de tres bases colombianas, elección de una y análisis de Saber 11 (calendario A, 2020-2). El trabajo de esta rama cubre las tres fases del enunciado.
 
 ## Bases
