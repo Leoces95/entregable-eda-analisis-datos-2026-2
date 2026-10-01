@@ -19,17 +19,33 @@ Exploración de tres bases colombianas, elección de una y análisis de Saber 11
 La justificación está en `01_exploracion/comparacion.md`.
 
 ## Cómo repetir el análisis
-
+### 1. Requisitos Previos
+- Python 3.10+
+- Git
+- Extensiones recomendadas en **VS Code**: **Python** y **Jupyter** (*necesarias para visualizar y ejecutar los notebooks `.ipynb`*).
+####  macOS / Linux
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
+```
+
+#### Windows
+```powershell
+py -m venv .venv
+
+# Habilitar ejecución de scripts (solo si es necesario) y activar entorno
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+.\.venv\Scripts\Activate.ps1
+```
+
+### Instalar dependencias
+```bash
 pip install -r requirements.txt
 python scripts/descargar_bases.py
 jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=600 01_exploracion/01_exploracion.ipynb
 jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=600 02_eda/02_eda.ipynb
 jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=600 03_preprocesamiento/03_preprocesamiento.ipynb
 ```
-
 Los CSV y el audio quedan en `data/` y no se suben al repositorio (Saber 11 pesa unos 374 MB).
 
 ## Estructura
